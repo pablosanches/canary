@@ -1,4 +1,4 @@
-# ![logo](https://i.imgur.com/RKRj91B.png) Canary
+# ![logo](https://i.imgur.com/pI9L4Ly.png) Canary
 
 Canary is a simple mail queuing and management
 
