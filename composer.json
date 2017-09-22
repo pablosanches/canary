@@ -21,5 +21,8 @@
         "psr-0": {
             "Canary\\": "src/"
         }
+    },
+    "scripts": {
+        "tests": "vendor/bin/phpunit tests"
     }
 }
