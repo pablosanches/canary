@@ -1,0 +1,6 @@
+<?php
+
+use Canary\Mailer;
+
+$mailer = new Mailer();
+$transaction = $mailer->send($phpmailer);
