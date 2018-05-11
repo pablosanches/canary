@@ -6,7 +6,7 @@
     "minimum-stability": "stable",
     "homepage": "https://github.com/pablosanches/canary",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "support": {
         "issues": "https://github.com/pablosanches/canary/issues"
     },

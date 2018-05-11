@@ -76,19 +76,24 @@ class Mailer
      */
     public function send()
     {
-        $stack = $this->getStack();
+        try {
+            $stack = $this->getStack();
 
-        if ($stack->count() == 0) {
-            return false;
-        }
-
-        foreach ($stack as $mail) {
-
-            try {
-                $mail->send();
-            } catch (Exception $e) {
-                $this->errors[] = $e->getMessage();
+            if ($stack->count() == 0) {
+                return false;
             }
+
+            foreach ($stack as $mail) {
+
+                $mail->send();
+                // try {
+                //     $mail->send();
+                // } catch (Exception $e) {
+                //     $this->errors[] = $e->getMessage();
+                // }
+            }
+        } catch (Exception $e) {
+            exit(var_dump($e));
         }
 
         if (count($this->errors) > 0) {
